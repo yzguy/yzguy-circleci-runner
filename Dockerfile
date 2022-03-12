@@ -13,6 +13,8 @@ RUN apt-get update; \
 RUN mkdir -p /opt/circleci/workdir
 WORKDIR /opt/circleci
 
+# https://circleci-binary-releases.s3.amazonaws.com/circleci-launch-agent/release.txt
+# https://circleci.com/docs/2.0/runner-installation/index.html#download-the-launch-agent-binary-and-verify-the-checksum
 ENV AGENT_VERSION=1.0.33818-051c2fc
 ENV TARGET_PLATFORM=linux/amd64
 
