@@ -21,5 +21,5 @@ workflows:
     jobs:
       - build
       - push:
-        requires:
-          - build
+          requires:
+            - build
