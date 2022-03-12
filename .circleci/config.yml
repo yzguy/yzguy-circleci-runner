@@ -14,6 +14,7 @@ jobs:
   push:
     executor: runner
     steps:
+      - checkout
       - run: task push
 
 workflows:
