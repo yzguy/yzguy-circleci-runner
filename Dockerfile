@@ -14,7 +14,7 @@ RUN apt-get update; \
 # Test
 
 # Install Task
-RUN wget -q -O /tmp/task.deb https://github.com/go-task/task/releases/download/v3.7.3/task_linux_amd64.deb && \
+RUN wget -q -O /tmp/task.deb https://github.com/go-task/task/releases/download/v3.16.0/task_linux_amd64.deb && \
     dpkg -i /tmp/task.deb && rm -f /tmp/task.deb
 
 CMD ["/opt/circleci/start.sh"]
