@@ -11,6 +11,7 @@ RUN apt-get update; \
     git \
     gpg \
     lsb-release \
+    bind9utils \
     openssh-client \
     wget
 
