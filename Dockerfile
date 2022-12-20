@@ -22,7 +22,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] http
 RUN apt-get update && apt-get install nomad
 
 # Install Task
-RUN wget -q -O /tmp/task.deb https://github.com/go-task/task/releases/download/v3.18.0/task_linux_amd64.deb && \
+RUN wget -q -O /tmp/task.deb https://github.com/go-task/task/releases/download/v3.19.0/task_linux_amd64.deb && \
     dpkg -i /tmp/task.deb && rm -f /tmp/task.deb
 
 CMD ["/opt/circleci/start.sh"]
