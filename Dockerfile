@@ -61,4 +61,4 @@ RUN pyenv install 3.11.3; \
 RUN wget -q -O /tmp/task.deb https://github.com/go-task/task/releases/download/v3.36.0/task_linux_$(dpkg --print-architecture).deb && \
     dpkg -i /tmp/task.deb && rm -f /tmp/task.deb
 
-CMD ["/opt/circleci/circleci-runner"]
+CMD ["/opt/circleci/bin/circleci-runner"]
