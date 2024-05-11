@@ -60,7 +60,7 @@ RUN apt-get update; \
 # Pyenv
 RUN git clone https://github.com/pyenv/pyenv.git /opt/pyenv
 ENV PYENV_ROOT=/opt/pyenv
-ENV PATH $PYENV_ROOT/bin:$PATH
+ENV PATH /opt/pyenv/shims:$PYENV_ROOT/bin:$PATH
 RUN pyenv install 3.11.3; \
     pyenv install 3.12.2; \
     pyenv install 3.12.3
